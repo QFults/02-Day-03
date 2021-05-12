@@ -11,57 +11,60 @@
 <body>
 
   <script>
-    let choices = ['r', 'p', 's']
-    let wins = 0
-    let ties = 0
-    let losses = 0
 
-    for (let i = 0; i < 10; i++) {
-      let user = prompt('choose r, p, or s')
-      let computer = choices[Math.floor(Math.random() * choices.length)]
+    // wordCombinator('Hello', 'World')
 
-      if (choices.indexOf(user) !== -1) {
-        if ((user === 'r' && computer === 's')
-          || (user === 'p' && computer === 'r')
-          || (user === 's' && computer === 'p')) {
-          wins++
-          alert(`
-            You chose: ${user}
-            The computer chose: ${computer}
-            You won!
-          `)
-        } else if (user === computer) {
-          ties++
-          alert(`
-            You chose: ${user}
-            The computer chose: ${computer}
-            You tied!
-          `)
-        } else {
-          losses++
-          alert(`
-            You chose: ${user}
-            The computer chose: ${computer}
-            You lost!
-          `)
-        }
-      } else {
-        alert('Invalid choice')
-        i--
+    // function wordCombinator (word1, word2) {
+    //   console.log(`${word1} ${word2}`)
+    // }
+    
+    // const wordCombinator = function (word1, word2) {
+    //   console.log(`${word1} ${word2}`)
+    // }
+
+    // const wordCombinator = (word1, word2) => {
+    //   console.log(`${word1} ${word2}`)
+    // }
+
+    // const wordPrinter = word => {
+    //   console.log(word)
+    // }
+
+    // const printer = _ => {
+    //   console.log('hi')
+    // }
+
+    // wordCombinator('Hello', 'World')
+    // wordCombinator('World', 'Hello')
+    // wordCombinator('Goodbye', 'World')
+    // wordCombinator('Goodbye')
+    // wordCombinator('One', 'Two', 'Three')
+
+    // const chain1 = _ => {
+    //   console.log('Step 1')
+    //   chain2()
+    // }
+    
+    // const chain2 = _ => {
+    //   console.log('Step 2')
+    //   chain3()
+    // }
+
+    // const chain3 = _ => {
+    //   console.log('Step 3')
+    //   chain1()
+    // }
+    
+    // chain1()
+
+    const recursive = _ => {
+      if (confirm('Continue?')) {
+        recursive()
       }
     }
 
-    alert(`
-      Results
-      ----------
-      Wins: ${wins}
-      Ties: ${ties}
-      Losses: ${losses}
-    `)
+    recursive()
 
-    if (confirm('Play again?')) {
-      location.reload()
-    }
   </script>
 </body>
 
