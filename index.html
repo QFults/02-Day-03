@@ -40,30 +40,34 @@
     // wordCombinator('Goodbye')
     // wordCombinator('One', 'Two', 'Three')
 
-    // const chain1 = _ => {
-    //   console.log('Step 1')
-    //   chain2()
-    // }
+    const chain1 = secret => {
+      console.log('Step 1')
+      chain2(secret)
+    }
     
-    // const chain2 = _ => {
-    //   console.log('Step 2')
-    //   chain3()
-    // }
-
-    // const chain3 = _ => {
-    //   console.log('Step 3')
-    //   chain1()
-    // }
-    
-    // chain1()
-
-    const recursive = _ => {
-      if (confirm('Continue?')) {
-        recursive()
-      }
+    const chain2 = jellyfish => {
+      console.log('Step 2')
+      chain3(jellyfish)
     }
 
-    recursive()
+    const chain3 = rhubarb => {
+      console.log('Step 3')
+      chain4(rhubarb)
+    }
+
+    const chain4 = hotdog => {
+      console.log(hotdog)
+    }
+    
+    chain1('Secret Message')
+
+    // const recursive = _ => {
+    //   if (confirm('Continue?')) {
+    //     recursive()
+    //   }
+    // }
+
+    // recursive()
 
   </script>
 </body>
