@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+
+    let x = parseInt(prompt('Give me a number greater than 0'))
+
+    if (x > 0) {
+      if (x === 1) {
+        alert('Not Prime')
+      } else if (x === 2) {
+        alert('Prime')
+      } else {
+        let isPrime = true
+        for (let i = 2; i < x; i++) {
+          if (x % i === 0) {
+            isPrime = false
+            break
+          }
+        }
+        if (isPrime) {
+          alert('Prime')
+        } else {
+          alert('Not Prime')
+        }
+      }
+    }
+
+  </script>
+</body>
+</html>
