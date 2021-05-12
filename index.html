@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
   <title>Document</title>
 </head>
+
 <body>
-  
+  <h1 id="myHeading" class="example">Hello Everyone!</h1>
+  <div id="myDiv"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  <script>
+    // console.log(document)
+
+    // grab element
+    // document.getElementById('myHeading')
+
+    // grab text
+    // console.log(document.getElementById('myHeading').textContent)
+
+    // give it text
+    // document.getElementById('myHeading').textContent = 'Hello World!'
+
+    // give it html
+    // document.getElementById('myHeading').innerHTML = '<button>Click Me</button>'
+
+    // change its CSS
+    // document.getElementById('myHeading').style.color = 'red'
+
+    // grab element by tag
+    // console.log(document.getElementsByTagName('h1'))
+
+    // grab element by class
+    // console.log(document.getElementsByClassName('example'))
+
+    // grab element general
+    // console.log(document.querySelector('#myHeading'))
+
+    // generate single new element
+    // let btnElem = document.createElement('button')
+    // btnElem.textContent = 'Click Me'
+    // document.getElementById('myDiv').append(btnElem)
+
+
+    // generate multiple new elements
+    // for (let i = 0; i < 50; i++) {
+    //   let btnElem = document.createElement('button')
+    //   btnElem.textContent = 'Click Me'
+      // btnElem.className = 'btn btn-primary'
+      // btnElem.classList.add('btn')
+      // btnElem.classList.add('btn-primary')
+    //   document.getElementById('myDiv').append(btnElem)
+    // }
+  </script>
 </body>
+
 </html>
